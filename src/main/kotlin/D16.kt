@@ -1,14 +1,4 @@
 import java.io.File
-import kotlin.streams.asStream
-
-private enum class Direction4(val dx: Int, val dy: Int, val oppositeIndex: Int) {
-    UP(0, -1, 2),
-    RIGHT(1, 0, 3),
-    DOWN(0, 1, 0),
-    LEFT(-1, 0, 1);
-
-    val opposite get() = entries[oppositeIndex]
-}
 
 fun main() {
     val grid = File("inputs/D16.txt").readLines()
